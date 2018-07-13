@@ -16,8 +16,6 @@ Constructed as a **self-assembly solution**, the DIY-Thermocam allows you to tak
 
 A **[scientific paper](https://github.com/maxritter/DIY-Thermocam/raw/master/Documents/Scientific%20Paper.pdf)** is also available, giving an **overview** about the whole **project** and its **capabilities**.
 
-**Update:** haraldg has written a nice set of tools for **post-processing** the thermal raw data files. Check it out **[here](https://github.com/haraldg/thermocam-tools)**. He also published a short article about **manual calibration** [here](https://github.com/maxritter/DIY-Thermocam/blob/master/Documents/ManualCalibration_01.pdf).
-
 ----------
 
 **HOW TO MAKE IT**
@@ -122,17 +120,17 @@ In order to **make your own DIY-Thermocam V2**, you have can use the **part list
    </tr>
    <tr>
       <td style="width: 111px">
-         &nbsp;<img src="https://raw.githubusercontent.com/maxritter/DIY-Thermocam/master/Images/BOM/VisualCam.png" style="-webkit-user-select: none" />
+         &nbsp;<img src="https://raw.githubusercontent.com/maxritter/DIY-Thermocam/master/Images/BOM/Arducam.png" style="-webkit-user-select: none" />
       </td>
-      <td style="width: 235px">Arducam V2 Mini 2MP<br />
+      <td style="width: 235px">Arducam V1 Mini 2MP<br />
          Visual camera module&nbsp;
       </td>
       <td>
          <strong>
-         <a href="http://www.ebay.com/itm/Arducam-2MP-V2-Mini-Camera-Shield-with-ESP8266-Nano-Esp-12F-Evaluation-Kits-/291833972833?hash=item43f2a90861:g:gUYAAOSwqfNXnrKR">
+         <a href="https://www.ebay.com/itm/Arducam-Mini-module-Camera-Shield-w-2-MP-OV2640-for-Arduino-UNO-Mega2560-board-/281639729684">
          Ebay.com</a></strong><br />
-         <a href="http://www.uctronics.com/arducam-2mp-v2-mini-camera-shield-with-esp8266-nano-esp-12f-evaluation-kits.html">
-         Uctronics.com</a>
+         <a href="http://www.watterott.com/de/2MP-Mini-Kamera-Board-OV2640">
+         Watterott.com</a>
       </td>
    </tr>
    <tr>

@@ -58,6 +58,7 @@ import pygame
 import pygbutton
 import os
 import scipy
+import scipy.misc
 import time
 import scipy.ndimage
 import sys
@@ -133,6 +134,7 @@ allButtons = None
 
 # Global Variables
 device = "COM10"
+device = "/dev/tty.usbmodem3064031"
 screen = None
 ser = None
 calTimer = None
@@ -991,8 +993,13 @@ def videoRecord():
         displayText("Converting..", False)
 
         # Use ffmpeg to convert the frames to avi
-        ffmpegCmd = 'ffmpeg -framerate %d -i %s/%%06d.jpg -codec copy %s' % \
-                    (round(frames), videoFolder, videoFolder + ".avi")
+        #ffmpegCmd = 'ffmpeg -framerate %d -i %s/%%06d.jpg -codec copy %s' % \
+        #           (round(frames), videoFolder, videoFolder + ".avi")
+        #ffmpeg_loc = os.getcwd() + "/"
+        #ffmpeg_loc = ffmpeg_loc.replace(' ', '\\ ')
+        ffmpeg_loc=''
+        ffmpegCmd = ffmpeg_loc + 'ffmpeg -framerate %d -i %s/%%06d.jpg -codec copy %s' % \
+            (round(frames), videoFolder, videoFolder + ".avi")
         os.system(ffmpegCmd)
 
         # Remove the folder with the single frames
@@ -1545,7 +1552,7 @@ def createThermalImage():
 
     # Resize image to 640x480 with nearest neighbour
     imageBig = scipy.misc.imresize(image, (640, 480), interp='nearest', mode=None)
-
+    #imageBig=image
     # Convert to pygame surface and save as thermal image
     thermalImg = pygame.surfarray.make_surface(imageBig)
 
